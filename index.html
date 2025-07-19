@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donneurs de Sang | L'application qui révolutionne le don</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome (icônes) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <!-- CSS Personnalisé -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">
+        <i class="fas fa-tint me-2"></i>ZIIM 
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#features">Fonctionnalités</a></li>
+          <li class="nav-item"><a class="nav-link" href="#rewards">Récompenses</a></li>
+          <li class="nav-item"><a class="nav-link" href="#download">Télécharger</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section bg-danger text-white py-5">
+    <div class="container pt-5">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h1 class="display-4 fw-bold">Sauvez des vies en un geste</h1>
+          <p class="lead">L'application qui simplifie le don de sang, récompense les donneurs et alerte en cas d'urgence.</p>
+          <div class="d-flex gap-3 mb-4">
+            <button class="btn btn-light btn-lg">
+              <i class="fab fa-apple me-2"></i> App Store
+            </button>
+            <button class="btn btn-outline-light btn-lg">
+              <i class="fab fa-google-play me-2"></i> Google Play
+            </button>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img src="imgs/602shots_so-removebg-preview.png" alt="App Donneurs de Sang" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pourquoi Donner ? -->
+  <section class="py-5" id="why">
+    <div class="container">
+      <h2 class="text-center mb-5">Pourquoi donner son sang ?</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-sm p-4 h-100">
+            <i class="fas fa-tint fa-3x text-danger mb-3"></i>
+            <h3>1 don = 3 vies sauvées</h3>
+            <p>Votre sang peut aider plusieurs patients.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-sm p-4 h-100">
+            <i class="fas fa-bell fa-3x text-danger mb-3"></i>
+            <h3>Alertes urgentes</h3>
+            <p>Recevez des notifications en cas de besoin critique.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card border-0 shadow-sm p-4 h-100">
+            <i class="fas fa-gift fa-3x text-danger mb-3"></i>
+            <h3>Récompenses</h3>
+            <p>Cumulez des points et obtenez des avantages.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fonctionnalités -->
+   
+  <section class="py-5 bg-light" id="features">
+    <div class="container">
+      <h2 class="text-center mb-5">Fonctionnalités clés</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <h3><i class="fas fa-map-marker-alt text-danger me-2"></i> Géolocalisation</h3>
+              <p>Trouvez les centres de collecte les plus proches en temps réel.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <h3><i class="fas fa-qrcode text-danger me-2"></i> Carte de donneur</h3>
+              <p>Un QR code unique pour accéder à votre profil médical.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <h3><i class="fas fa-history text-danger me-2"></i> Historique</h3>
+              <p>Suivez vos dons et vos récompenses.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <h3><i class="fas fa-heartbeat text-danger me-2"></i> Carnet de santé</h3>
+              <p>Stockez vos données médicales en sécurité.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Récompenses -->
+  <section class="py-5" id="rewards">
+    <div class="container">
+      <h2 class="text-center mb-5">Système de récompenses</h2>
+      <div class="row">
+        <div class="col-lg-4 text-center mb-4">
+          <div class="reward-card bronze p-4">
+            <h3><i class="fas fa-medal me-2"></i> Bronze</h3>
+            <p>À partir de 1 don</p>
+            <ul class="text-start">
+              <li>Badge numérique</li>
+              <li>Remerciement personnalisé</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center mb-4">
+          <div class="reward-card silver p-4">
+            <h3><i class="fas fa-medal me-2"></i> Argent</h3>
+            <p>À partir de 5 dons</p>
+            <ul class="text-start">
+              <li>Bons de réduction</li>
+              <li>Accès prioritaire</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center mb-4">
+          <div class="reward-card gold p-4">
+            <h3><i class="fas fa-medal me-2"></i> Or</h3>
+            <p>À partir de 10 dons</p>
+            <ul class="text-start">
+              <li>Cadeaux exclusifs</li>
+              <li>Parrainage</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Téléchargement -->
+  <section class="py-5 bg-danger text-white" id="download">
+    <div class="container text-center">
+      <h2 class="mb-4">Prêt à sauver des vies ?</h2>
+      <p class="mb-5">Téléchargez l'application maintenant et rejoignez la communauté des donneurs.</p>
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <button class="btn btn-light btn-lg">
+          <i class="fab fa-apple me-2"></i> App Store
+        </button>
+        <button class="btn btn-light btn-lg">
+          <i class="fab fa-google-play me-2"></i> Google Play
+        </button>
+      </div>
+      <div class="mt-4">
+        <img src="assets/qr-download.png" alt="QR Code Téléchargement" width="120">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="py-5" id="contact">
+    <div class="container">
+      <h2 class="text-center mb-5">Contactez-nous</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Votre nom" required>
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Votre email" required>
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" rows="5" placeholder="Votre message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-danger btn-lg">Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h5><i class="fas fa-tint me-2"></i>Donneurs de Sang</h5>
+          <p>L'application qui révolutionne le don de sang.</p>
+        </div>
+        <div class="col-md-4 mb-4 mb-md-0">
+          <h5>Liens utiles</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">FAQ</a></li>
+            <li><a href="#" class="text-white">Contact</a></li>
+            <li><a href="#" class="text-white">Mentions légales</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Réseaux sociaux</h5>
+          <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+          <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+        </div>
+      </div>
+      <hr class="my-4">
+      <p class="mb-0 text-center">&copy; 2024 Donneurs de Sang. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JS Personnalisé -->
+  <script src="script.js"></script>
+</body>
+</html>
