@@ -17,3 +17,42 @@ document.querySelectorAll('.reward-card').forEach(card => {
     this.style.boxShadow = 'none';
   });
 });
+
+
+// Animation au scroll
+document.addEventListener('DOMContentLoaded', function() {
+  // Animation des éléments
+  const animateOnScroll = () => {
+    const elements = document.querySelectorAll('.design-card, .reward-card');
+    
+    elements.forEach(el => {
+      const elPosition = el.getBoundingClientRect().top;
+      const screenPosition = window.innerHeight / 1.3;
+      
+      if(elPosition < screenPosition) {
+        el.style.opacity = '1';
+        el.style.transform = 'translateY(0)';
+      }
+    });
+  };
+  
+  // Initial state
+  document.querySelectorAll('.design-card, .reward-card').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'all 0.6s ease';
+  });
+  
+  window.addEventListener('scroll', animateOnScroll);
+  animateOnScroll(); // Trigger on load
+  
+  // Smooth scrolling for navigation
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+});
